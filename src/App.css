@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial;
   background: #f8f3de;
+  
 }
 
 .navbar {
@@ -22,27 +23,227 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 40px;
+  
 }
 
 .box {
+   position: relative;
   background: #fff4e6;
   border: 1px solid #c8bfbf;
   padding: 20px;
   border-radius: 8px;
-  width: 250px;
+  width: 400px;
 }
 
-.box input {
-  width: 90%;
-  margin: 10px 0;
-  padding: 8px;
+
+
+
+.signup-window {
+  width: 350px;
+  margin: 5rem auto;
+ 
+  background-color: #fff6e9;
+  border: 2px solid #b98968;
+  border-radius: 10px;
+  font-family: 'VT323', monospace;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.window-header {
+  background-color: #fddbb0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.window-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+.yellow {
+  background-color: #ffbd2e;
+}
+.green {
+  background-color: #27c93f;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;  /* ✅ Center horizontally */
+  margin-right: auto; /* ✅ Center horizontally */
+}
+
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 4px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
 }
 
 .btns {
   display: flex;
-  justify-content: space-between;
-  margin:8px;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; /* ✅ Adds space after the buttons */
 }
+
+
+.register-btn {
+  background-color: #47d764;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #f4a261;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.register-btns {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-btns {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.box input {
+  width: 90%;
+  margin: 4px 0;
+  padding: 8px;
+}
+
+
+.dots-horizontal {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff4d4d;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.blue {
+  background-color: #2196f3;
+}
+
+
+.btns {
+  display: flex;
+  gap: 2rem;
+  justify-content: center; /* Center horizontally */
+  margin-top: 1rem;
+  
+}
+
+.btn-login {
+  background-color: #fca652; /* orange */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-register {
+  background-color: #4caf50; /* green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+
 
 /* === General Layout === */
 body {
